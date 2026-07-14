@@ -9,55 +9,67 @@
 
 </div>
 
-
 <br />
 <div align="center">
   <a href="https://github.com/brood-works/displayduck-pack-example">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
+  <img src="img/twitch.webp" alt="Twitch" width="80" height="80">
 
-  <h3 align="center">DisplayDuck Example Widget</h3>
+  <h3 align="center">Twitch HLS</h3>
 
   <p align="center">
-    Example widget for developers to fork and customize.
+    Display Twitch live streams in DisplayDuck using HLS.
   </p>
 </div>
+
+> [!WARNING]
+> Although this pack works for anyone, it is intended for Twitch creators who want to monitor their own stream without interruptions.
+>
+> Direct HLS playback may violate Twitch’s Terms of Service. Use it at your own risk.
 
 ---
 
 ## About
-This is an example widget for developers as template to study or fork for custom widgets/packs in DisplayDuck. (including this ReadMe)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Getting Started
-This Widget has no requirements and is purely meant to demonstrate posibillities with DisplayDuck.
-
+This pack adds a Twitch Stream widget to DisplayDuck. It checks whether the configured channel is live, starts DisplayDuck’s local HLS proxy, and plays the stream in the widget. The stream status is checked every five seconds while the widget is active.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
 ## Configurable options
-| Setting | Type | Configurable Values | Default Value
+
+| Setting | Type | Configurable Values | Default Value |
 |---|---|---|---|
-| Example Boolean | `boolean` | `true`<br />`false` | `false`
-| Example Color Picker | `color-picker` | `color` | `#ffffff`
-| Example Number | `number` | any `number` | 0
-| Example Select | `dropdown` | `option1`<br />`option2`<br />`option3` | `option1`
-| Example Widget Select | `widget-select` | `widget` | 
+| Twitch Channel | `string` | channel login or Twitch URL | empty |
+| Auto-hide | `boolean` | `true`<br />`false` | `false` |
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Getting Started
+Build the pack from this directory with Node 24 or newer:
+
+```bash
+npm install
+npm run build
+```
+
+The compiler writes the widget bundle to `dist/twitch-hls.js`. Use the development command for watch mode:
+
+```bash
+npm run development
+```
+
+To load the pack during local development, enable Developer Mode in DisplayDuck and add either this directory or its parent `plugins/enabled` directory under the local widget paths.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion, please fork the repo and create a pull request, or open an issue with the tag “enhancement”.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -71,9 +83,7 @@ Don't forget to give the project a star! Thanks again!
   <img src="https://contrib.rocks/image?repo=brood-works/displayduck-pack-example" />
 </a>
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 [contributors-shield]: https://img.shields.io/github/contributors/brood-works/displayduck-pack-example.svg
 [contributors-url]: https://github.com/brood-works/displayduck-pack-example/graphs/contributors
@@ -82,4 +92,4 @@ Don't forget to give the project a star! Thanks again!
 [stars-shield]: https://img.shields.io/github/stars/brood-works/displayduck-pack-example
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/brood-works/displayduck-pack-example
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://www.best-readme-template.com/issues

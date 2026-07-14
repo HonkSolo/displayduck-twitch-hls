@@ -1,0 +1,52 @@
+{{#if channel()}}
+  {{#if shouldRenderStream()}}
+    <div class="twitch twitch-stream">
+      <div class="video-wrapper">
+        <div class="video-container {{#if streamIsLive()}}bordered{{/if}}">
+          <video
+            class="stream-video"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+            controlslist="nodownload nofullscreen noremoteplayback"
+            disablepictureinpicture
+            disableremoteplayback
+          ></video>
+          {{#if streamError()}}
+            <div class="status">{{ streamError() }}</div>
+          {{/if}}
+          {{#if !streamError()}}
+            {{#if !streamLiveStatusChecked()}}
+              <div class="status loading">
+                <i class="fa-brands fa-twitch"></i>
+                <span>Checking {{ channel() }}'s stream</span>
+              </div>
+            {{/if}}
+            {{#if streamIsLive()}}
+              {{#if !streamVideoReady()}}
+                <div class="status loading">
+                  <i class="fa-brands fa-twitch"></i>
+                  <span>Getting {{ channel() }}'s stream</span>
+                </div>
+              {{/if}}
+            {{/if}}
+            {{#if !streamIsLive()}}
+              {{#if streamLiveStatusChecked()}}
+                <div class="status">{{ channel() }} is currently offline.</div>
+              {{/if}}
+            {{/if}}
+          {{/if}}
+        </div>
+    </div>
+  {{/if}}
+{{/if}}
+
+{{#if !channel()}}
+  {{#if !autoHide()}}
+    <div class="no-channel">
+      <i class="fa-brands fa-twitch"></i>
+      <span>No Twitch channel configured.</span>
+    </div>
+  {{/if}}
+{{/if}}

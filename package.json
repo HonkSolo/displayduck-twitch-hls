@@ -3,9 +3,12 @@
     "build": "displayduck-compile-pack --pack-dir .",
     "development": "displayduck-compile-pack --pack-dir . --watch"
   },
+  "dependencies": {
+    "hls.js": "^1.6.16"
+  },
   "devDependencies": {
     "@displayduck/base": "^0.1.0",
     "@displayduck/compiler": "^0.1.0"
   },
-  "main": "./dist/example.js"
+  "main": "./dist/twitch-hls.js"
 }
