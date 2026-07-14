@@ -11,7 +11,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/brood-works/displayduck-pack-example">
+  <a href="https://github.com/HonkSolo/displayduck-twitch-hls">
     <img src="logo.png" alt="Logo" width="80" height="80">
   </a>
   <img src="img/twitch.webp" alt="Twitch" width="80" height="80">
@@ -79,17 +79,17 @@ If you have a suggestion, please fork the repo and create a pull request, or ope
 
 ### Contributors:
 
-<a href="https://github.com/brood-works/displayduck-pack-example/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=brood-works/displayduck-pack-example" />
+<a href="https://github.com/HonkSolo/displayduck-twitch-hls/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HonkSolo/displayduck-twitch-hls" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/brood-works/displayduck-pack-example.svg
-[contributors-url]: https://github.com/brood-works/displayduck-pack-example/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/brood-works/displayduck-pack-example
-[forks-url]: https://github.com/brood-works/displayduck-pack-example/network/members
-[stars-shield]: https://img.shields.io/github/stars/brood-works/displayduck-pack-example
+[contributors-shield]: https://img.shields.io/github/contributors/HonkSolo/displayduck-twitch-hls.svg
+[contributors-url]: https://github.com/HonkSolo/displayduck-twitch-hls/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/HonkSolo/displayduck-twitch-hls
+[forks-url]: https://github.com/HonkSolo/displayduck-twitch-hls/network/members
+[stars-shield]: https://img.shields.io/github/stars/HonkSolo/displayduck-twitch-hls
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/brood-works/displayduck-pack-example
+[issues-shield]: https://img.shields.io/github/issues/HonkSolo/displayduck-twitch-hls
 [issues-url]: https://www.best-readme-template.com/issues
