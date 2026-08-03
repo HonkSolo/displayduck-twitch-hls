@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/HonkSolo/displayduck-twitch-hls">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
   <img src="img/twitch.webp" alt="Twitch" width="80" height="80">
 

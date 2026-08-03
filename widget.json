@@ -1,13 +1,13 @@
 {
-    "icon": "fa-brands fa-twitch",
+    "icon": "img/icon.png",
     "name": "Twitch HLS",
     "description": "Display a Twitch channel's live stream using HLS.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "widgets": [
         {
             "category": "social",
             "id": "twitch-hls",
-            "icon": "fab fa-twitch",
+            "icon": "img/icon.png",
             "name": "Twitch Stream",
             "description": "Display a Twitch channel's live stream using HLS",
             "platform": "all",
