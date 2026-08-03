@@ -5,7 +5,7 @@
     "version": "1.0.1",
     "widgets": [
         {
-            "category": "social",
+            "category": "media",
             "id": "twitch-hls",
             "icon": "img/icon.png",
             "name": "Twitch Stream",
